@@ -117,8 +117,15 @@ Contact us :
    4. برنامه git را از طریق این [لینک](https://git-scm.com/download/win) دانلود و سپس نصب کنید.
    5. از طریق این [لینک](https://signup.heroku.com/login) در وبسایت Heroku ثبت نام کنید.
    6. برنامه Heroku CLI را از طریق این [لینک](https://devcenter.heroku.com/articles/heroku-cli) دانلود و نصب کنید.
-   
-   
+	
+   ### مرحله 1 :
+
+   - برای شروع با استفاده از دستور زیر این repository را clone کنید و سپس طبق مراحل زیر تغییرات مختص به خودتان را انجام بدهید. 
+
+   ```shell
+   	git clone https://github.com/RexxarCompany/DeployToHeroku.git
+   -  ```shell
+   cd DeployToHeroku 
    
    
    
