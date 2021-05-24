@@ -106,7 +106,17 @@ Contact us :
 <div dir="rtl">
    
    # راه اندازی ربات تلگرام در وبسایت Heroku   |  زبان راهنما : فارسی
-   
+   زبان های راهنما : انگلیسی ، فارسی
+	
+
+	
+   ## مراحل خیلی ابتدایی
+   1. برنامه تلگرام را از [اینجا](https://telegram.org) دانلود کنید و سپس آن را نصب کنید.
+   2. ربات تلگرام خود را توسط [BotFather](https://t.me/BotFather) بسازید.
+   3. اگر پایتون در سیستم شما نصب نیست ، پایتون را از [اینجا](https://www.python.org/downloads/windows/) دانلود کنید و سپس نصب کنید.
+   4. برنامه git را از طریق این [لینک](https://git-scm.com/download/win) دانلود و سپس نصب کنید.
+   5. از طریق این [لینک](https://signup.heroku.com/login) در وبسایت Heroku ثبت نام کنید.
+   6. برنامه Heroku CLI را از طریق این [لینک](https://devcenter.heroku.com/articles/heroku-cli) دانلود و نصب کنید.
    
    
    
