@@ -53,45 +53,45 @@ Guidline Languages : Enligsh and Persian | English Language
 - Next 
 
    ```shell
-     heroku login
-     heroku create app_name
+   heroku login
+   heroku create app_name
 
 - If you have already created app then select it:
 
    ```shell
-     heroku git:remote -a app_name
+   heroku git:remote -a app_name
 
  - Or else continue:
      ```shell
      git add -f bot.py Procfile requirements.txt __init__.py
  -  ```shell
-     git commit -m "Added Files"
+    git commit -m "Added Files"
 
 - If you want add anyfiles like "bot.jpg" to your project on heroku , Just add the name of that file at the end of the blow line
 
    ```shell
-     git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
+   git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
  -  ```shell
-     git commit -m "Added Files"
+    git commit -m "Added Files"
   
 - Push files to heroku:
 
     ```shell
-     git push heroku master
+    git push heroku master
 - If it is not working then try this one:
 
      ```shell
-      git push heroku master --force
+     git push heroku master --force
 ### At this point your bot should be running, you can check by
  
  -  ```shell
-      heroku ps
+    heroku ps
 
 - If it is not running then we have to reset dynos:
     ```shell
-       heroku ps:scale worker=0
+    heroku ps:scale worker=0
  -  ```shell
-       heroku ps:scale worker=1
+    heroku ps:scale worker=1
 - Now it should be running fine! Enjoy :)  
 
 
@@ -126,9 +126,9 @@ Contact us :
 <div dir="ltr">
   
    -  ```shell
-	   git clone https://github.com/RexxarCompany/DeployToHeroku.git
+      git clone https://github.com/RexxarCompany/DeployToHeroku.git
    -  ```shell
-	   cd DeployToHeroku	   
+      cd DeployToHeroku	   
 </div>
 
    ### مرحله یک :
@@ -143,7 +143,7 @@ Contact us :
  <div dir="ltr">
 
    -  ```shell
-       worker: python YourCustomName.py
+      worker: python YourCustomName.py
 </div>
    
    ### مرحله سوم :
@@ -167,7 +167,7 @@ Contact us :
 <div dir="ltr">
   
    -  ```shell
-	   git init	   
+      git init	   
 </div>
 
 ### مرحله پنجم :
@@ -177,8 +177,8 @@ Contact us :
 <div dir="ltr">
   
    -  ```shell
-	   heroku login
-       heroku create app_name	   
+      heroku login
+      heroku create app_name	   
 </div>
 
 - اگر از قبل یک اپلیکیشن در وبسایت Heroku ساخته اید ، از کد زیر استفاده کنید و نام اپلیکیشن خود را جاگزین app_name کنید.
@@ -186,16 +186,16 @@ Contact us :
  <div dir="ltr">
   
    -  ```shell
-	   heroku git:remote -a app_name	   
+      heroku git:remote -a app_name	   
 </div>
 
  - در ادامه کد زیر را وارد کنید ، دقت کنید که با استفاده از این کد ، در حقیقت پروژه خود را بر Heroku آپلود کرده اید :
  <div dir="ltr">
   
    -  ```shell
-	   git add -f bot.py Procfile requirements.txt __init__.py
+      git add -f bot.py Procfile requirements.txt __init__.py
    -  ```shell
-       git commit -m "Added Files"	   
+      git commit -m "Added Files"	   
 </div>
      
 
@@ -204,23 +204,23 @@ Contact us :
  <div dir="ltr">
   
    -  ```shell
-	   git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
+      git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
    -  ```shell
-       git commit -m "Added Files"	   
+      git commit -m "Added Files"	   
 </div>
   
 - با استفاده از دستور زیر ، آپلود فایل هایتان آغاز میشود و بر وبسایت Heroku قرار میگیرد.
  <div dir="ltr">
   
    -  ```shell
-	   git push heroku master   
+      git push heroku master   
 </div>
 - اگر در هنگام وارد کردن کد بالا با ارور مواجه شدید ، کد زیر را وارد نمایید :
 
 <div dir="ltr">
   
    -  ```shell
-	   git push heroku master  --force 
+      git push heroku master  --force 
 </div>
 
 ### تبریک ، ربات شما در تلگرام ران شد ، اگر ران نبود با استفاده از کد زیر اطمینان حاصل کنید : 
@@ -228,7 +228,7 @@ Contact us :
  <div dir="ltr">
   
    -  ```shell
-	   heroku ps
+      heroku ps
 </div>
 
 
@@ -237,9 +237,9 @@ Contact us :
  <div dir="ltr">
   
    -  ```shell
-	   heroku ps:scale worker=0
+      heroku ps:scale worker=0
    -  ```shell
-	   heroku ps:scale worker=0
+      heroku ps:scale worker=1
 </div>
 
 
