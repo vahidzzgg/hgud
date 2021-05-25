@@ -261,8 +261,7 @@ Contact us :
       Instagram : rexxar.ir   
 </div>
 
-![working](https://github.com/RexxarCompany/DeployToHeroku/blob/main/WorkingBot.gif)
-   
+![working](https://github.com/RexxarCompany/DeployToHeroku/blob/master/WorkingBot.gif)
    
    
    
