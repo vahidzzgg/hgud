@@ -11,10 +11,11 @@ Guidline Languages : Enligsh and Persian | English Language
 
 ### [0] Step  [Optional]:
 
-- For first , Git clone this repository and editing the files by below steps .
+- For first , Git clone this repository and go to DeployToHeroku Folder , then editing the files by below steps .
 
    ```shell
    git clone https://github.com/RexxarCompany/DeployToHeroku.git
+-  ```shell
    cd DeployToHeroku 
    
 ### [1] Step :
@@ -26,7 +27,7 @@ Guidline Languages : Enligsh and Persian | English Language
 - If you want rename bot.py , you should replace your custom name by editing *Procfile* file
  
    ```shell
-   worker: python YourCustemName.py
+   worker: python YourCustomName.py
 
 ### [3] Step :
 
@@ -118,14 +119,83 @@ Contact us :
    5. از طریق این [لینک](https://signup.heroku.com/login) در وبسایت Heroku ثبت نام کنید.
    6. برنامه Heroku CLI را از طریق این [لینک](https://devcenter.heroku.com/articles/heroku-cli) دانلود و نصب کنید.
 	
-   ### مرحله 1 :
+   ### مرحله 0 :
 
    - برای شروع با استفاده از دستور زیر این repository را clone کنید و سپس طبق مراحل زیر تغییرات مختص به خودتان را انجام بدهید. 
 
-   ```shell
-   	git clone https://github.com/RexxarCompany/DeployToHeroku.git
+      ```shell
+	   git clone https://github.com/RexxarCompany/DeployToHeroku.git
    -  ```shell
-   cd DeployToHeroku 
+	   cd DeployToHeroku 
+   
+   ### مرحله یک :
+
+   - بر روی bot.py کلیک راست کنید و کد های مربوط بات خودتان را در آن جایگزاری کنید و سپس فایل را ذخیره کنیدو ببنید.
+
+   
+   ### مرحله دوم :
+
+   - اگر شما میخواهید نام فایل *bot.py* را تغییر دهید ، باید بعد از تغییر ، محتوای فایل *Procfile* را نیز تغییر دهید ، یعنی آنکه بر روی *Procfile* کلیک راست کنید
+	و سپس Edit with notepad را بزنید و به شکل کد زیر محتوا را تغییر بدهید یعنی بجای *YourCustomName.py* نام فایلی که کدتان درآن قرار دارد را بزنید.
+ 
+      ```shell
+         worker: python YourCustomName.py
+   
+   ### مرحله سوم :
+
+- نام هر ماژول یا کتاب خانه ای که داخل پروژه و سورس کد خود استفاده کرده اید را در فایل *requirements.txt* وارد کنید. 
+
+	- به طور مثال چندین ماژول را در *requirements.txt* وارد کرده ایم :
+
+		 -   ```shell
+			  future>=0.16.0
+			  certifi
+			  tornado>=5.1
+			  cryptography
+			  python-telegram-bot
+
+### مرحله چهارم :
+- محیط Bash یا CMD را باز کنید و به محلی که فایل هایتان یعنی *bot.py* قرار دارد ، بروید. 
+- در همان محیط با کمک کد زیر ، git را راه اندازی کنید.
+
+  ```shell
+  git init
+   
+### مرحله پنجم :
+- heroku CLI را نصب کنید.
+- سپس دستور زیر را وارد کنید : 
+
+   ```shell
+     heroku login
+     heroku create app_name
+
+- اگر از قبل یک اپلیکیشن در وبسایت Heroku ساخته اید ، از کد زیر استفاده کنید و نام اپلیکیشن خود را جاگزین app_name کنید.
+
+   ```shell
+     heroku git:remote -a app_name
+
+ - در ادامه کد زیر را وارد کنید ، دقت کنید که با استفاده از این کد ، در حقیقت پروژه خود را بر Heroku آپلود کرده اید :
+     ```shell
+     git add -f bot.py Procfile requirements.txt __init__.py
+ -  ```shell
+     git commit -m "Added Files"
+
+- ممکن است پروژه شما از فایل های بیشتر و دیگری برخوردار باشد ، برای اضافه کردن هر فایلی به وبسایت Heroku کافیست نام آن فایل را در انتها خط زیر اضافه کنید.
+	به طور مثال فایل *bot.jpg* را بخواهیم اضافه کنیم ، به این شکل این کد ها را دوباره وارد میکنیم : 
+
+   ```shell
+     git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
+ -  ```shell
+     git commit -m "Added Files"
+  
+- با کد زیر مراحل آپلود را نهایی کرده اید :
+
+    ```shell
+     git push heroku master
+- If it is not working then try this one:
+
+     ```shell
+      git push heroku master --force   
    
    
    
@@ -147,12 +217,4 @@ Contact us :
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   </div>
+</div>
