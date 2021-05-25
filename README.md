@@ -224,15 +224,23 @@ Contact us :
 
 ### تبریک ، ربات شما در تلگرام ران شد ، اگر ران نبود با استفاده از کد زیر اطمینان حاصل کنید : 
  
- -  ```shell
-      heroku ps
+ <div dir="ltr">
+  
+   -  ```shell
+	   heroku ps
+</div>
+
 
 - اگر ران نشده بود با استفاده از کد زیر dynos را ریست میکنیم :
   
-    ```shell
-       heroku ps:scale worker=0
- -  ```shell
-       heroku ps:scale worker=1
+ <div dir="ltr">
+  
+   -  ```shell
+	   heroku ps:scale worker=0
+   -  ```shell
+	   heroku ps:scale worker=0
+</div>
+
 
 - حالا باید ران شده باشد ، امیدواریم از این آموزش لذت برده باشید. 
    
@@ -241,14 +249,17 @@ Contact us :
 
 ### آیا در رابطه با این آموزش به ویدئو آموزشی احتیاج دارید ؟ 
 
-	- برای دیدن ویدئو آموزشی از طریق این [لینک](https://www.youtube.com/channel/UCJJfE0UeVfAVYsy90M7cdgQ) به یوتویوب رکسار مراجعه کنید. 
+- برای دیدن ویدئو آموزشی از طریق این [لینک](https://www.youtube.com/channel/UCJJfE0UeVfAVYsy90M7cdgQ) به یوتویوب رکسار مراجعه کنید. 
 
-	
-تماس با ما :
+### تماس با ما :	
+<div dir="ltr">
+  
+  -  ```shell
+      Website : rexxar.ir
+      Telegram : rexxar_ir
+      Instagram : rexxar.ir   
+</div>
 
-	Website : rexxar.ir
-	Telegram : rexxar_ir
-	Instagram : rexxar.ir   
    
    
    
