@@ -122,12 +122,14 @@ Contact us :
    ### مرحله 0 :
 
    - برای شروع با استفاده از دستور زیر این repository را clone کنید و سپس طبق مراحل زیر تغییرات مختص به خودتان را انجام بدهید. 
-
-      ```shell
+<div dir="ltr">
+  
+   -  ```shell
 	   git clone https://github.com/RexxarCompany/DeployToHeroku.git
    -  ```shell
-	   cd DeployToHeroku 
-   
+	   cd DeployToHeroku	   
+</div>
+
    ### مرحله یک :
 
    - بر روی bot.py کلیک راست کنید و کد های مربوط بات خودتان را در آن جایگزاری کنید و سپس فایل را ذخیره کنیدو ببنید.
@@ -137,84 +139,131 @@ Contact us :
 
    - اگر شما میخواهید نام فایل *bot.py* را تغییر دهید ، باید بعد از تغییر ، محتوای فایل *Procfile* را نیز تغییر دهید ، یعنی آنکه بر روی *Procfile* کلیک راست کنید
 	و سپس Edit with notepad را بزنید و به شکل کد زیر محتوا را تغییر بدهید یعنی بجای *YourCustomName.py* نام فایلی که کدتان درآن قرار دارد را بزنید.
- 
-      ```shell
-         worker: python YourCustomName.py
+ <div dir="ltr">
+
+   -  ```shell
+       worker: python YourCustomName.py
+</div>
    
    ### مرحله سوم :
 
 - نام هر ماژول یا کتاب خانه ای که داخل پروژه و سورس کد خود استفاده کرده اید را در فایل *requirements.txt* وارد کنید. 
 
 	- به طور مثال چندین ماژول را در *requirements.txt* وارد کرده ایم :
-
-		 -   ```shell
-			  future>=0.16.0
-			  certifi
-			  tornado>=5.1
-			  cryptography
-			  python-telegram-bot
+<div dir="ltr">
+	    
+	future>=0.16.0
+	certifi
+	tornado>=5.1
+	cryptography
+	python-telegram-bot
+</div>
 
 ### مرحله چهارم :
 - محیط Bash یا CMD را باز کنید و به محلی که فایل هایتان یعنی *bot.py* قرار دارد ، بروید. 
 - در همان محیط با کمک کد زیر ، git را راه اندازی کنید.
 
-  ```shell
-  git init
-   
+<div dir="ltr">
+  
+   -  ```shell
+	   git init	   
+</div>
+
 ### مرحله پنجم :
 - heroku CLI را نصب کنید.
 - سپس دستور زیر را وارد کنید : 
 
-   ```shell
-     heroku login
-     heroku create app_name
+<div dir="ltr">
+  
+   -  ```shell
+	   heroku login
+       heroku create app_name	   
+</div>
 
 - اگر از قبل یک اپلیکیشن در وبسایت Heroku ساخته اید ، از کد زیر استفاده کنید و نام اپلیکیشن خود را جاگزین app_name کنید.
 
-   ```shell
-     heroku git:remote -a app_name
+ <div dir="ltr">
+  
+   -  ```shell
+	   heroku git:remote -a app_name	   
+</div>
 
  - در ادامه کد زیر را وارد کنید ، دقت کنید که با استفاده از این کد ، در حقیقت پروژه خود را بر Heroku آپلود کرده اید :
-     ```shell
-     git add -f bot.py Procfile requirements.txt __init__.py
- -  ```shell
-     git commit -m "Added Files"
+ <div dir="ltr">
+  
+   -  ```shell
+	   git add -f bot.py Procfile requirements.txt __init__.py
+   -  ```shell
+       git commit -m "Added Files"	   
+</div>
+     
 
 - ممکن است پروژه شما از فایل های بیشتر و دیگری برخوردار باشد ، برای اضافه کردن هر فایلی به وبسایت Heroku کافیست نام آن فایل را در انتها خط زیر اضافه کنید.
 	به طور مثال فایل *bot.jpg* را بخواهیم اضافه کنیم ، به این شکل این کد ها را دوباره وارد میکنیم : 
-
-   ```shell
-     git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
- -  ```shell
-     git commit -m "Added Files"
+ <div dir="ltr">
   
-- با کد زیر مراحل آپلود را نهایی کرده اید :
-
-    ```shell
-     git push heroku master
-- If it is not working then try this one:
-
-     ```shell
-      git push heroku master --force   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+   -  ```shell
+	   git add -f bot.py Procfile requirements.txt __init__.py bot.jpg
+   -  ```shell
+       git commit -m "Added Files"	   
 </div>
+  
+- با استفاده از دستور زیر ، آپلود فایل هایتان آغاز میشود و بر وبسایت Heroku قرار میگیرد.
+ <div dir="ltr">
+  
+   -  ```shell
+	   git push heroku master   
+</div>
+- اگر در هنگام وارد کردن کد بالا با ارور مواجه شدید ، کد زیر را وارد نمایید :
+
+<div dir="ltr">
+  
+   -  ```shell
+	   git push heroku master  --force 
+</div>
+
+### تبریک ، ربات شما در تلگرام ران شد ، اگر ران نبود با استفاده از کد زیر اطمینان حاصل کنید : 
+ 
+ -  ```shell
+      heroku ps
+
+- اگر ران نشده بود با استفاده از کد زیر dynos را ریست میکنیم :
+  
+    ```shell
+       heroku ps:scale worker=0
+ -  ```shell
+       heroku ps:scale worker=1
+
+- حالا باید ران شده باشد ، امیدواریم از این آموزش لذت برده باشید. 
+   
+
+	
+
+### آیا در رابطه با این آموزش به ویدئو آموزشی احتیاج دارید ؟ 
+
+	- برای دیدن ویدئو آموزشی از طریق این [لینک](https://www.youtube.com/channel/UCJJfE0UeVfAVYsy90M7cdgQ) به یوتویوب رکسار مراجعه کنید. 
+
+	
+تماس با ما :
+
+	Website : rexxar.ir
+	Telegram : rexxar_ir
+	Instagram : rexxar.ir   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
