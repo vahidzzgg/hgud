@@ -103,7 +103,7 @@ Contact us :
 	Website : rexxar.ir
 	Telegram : rexxar_ir
 	Instagram : rexxar.ir
-![working](https://github.com/RexxarCompany/DeployToHeroku/blob/main/WorkingBot.gif)
+![working](https://github.com/RexxarCompany/DeployToHeroku/blob/master/WorkingBot.gif)
 
 <div dir="rtl">
    
