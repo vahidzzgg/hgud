@@ -1,6 +1,6 @@
-python3-pip
-telethon
-asyncio
-pytz
-datetime
-aiocron
+python3-pip>=3.4
+telethon>=1.24.0
+asyncio=3.4.3
+pytz>=2022.1
+datetime>4.4
+aiocron>1.8
